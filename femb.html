@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTS Femb - Tự do & Sáng tạo</title>
+    <link rel="stylesheet" href="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/css.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/femblogo.jpg" alt="Thua" width="60" height="60">
+                <div class="logo-text">
+                    <h1 title="Free Enjoyable Music Band">FEMB</h1>
+                    <p>Tự do - Năng động - Sáng tạo</p>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/femb.html">Trang chủ</a></li>
+                <li><a href="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/fembchar.html">Thành viên</a></li>
+                <li><a href="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/gallery.html">Thư viện</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100068426238734" target="_blank">Liên hệ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="section-box">
+            <div class="image-side">
+                <img src="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/fem1.png" class="zoomable-img">
+            </div>
+            <div class="content-side">
+                <h2>1. Về chúng mình</h2>
+                <p>FEMB ra đời năm <span class="highlight">2020</span>, được “khai sinh” bởi những bạn trẻ 2k2 mang trong mình tinh thần dám nghĩ – dám làm và một tình yêu không nhỏ dành cho âm nhạc. Ngay từ những ngày đầu, FEMB đã chọn cho mình một hướng đi rất riêng: không gò bó, không khuôn mẫu.</p>
+                <p>Đến nay, FEMB đã bước sang <span class="highlight">thế hệ thứ 8</span>. Dù thời gian trôi qua, vibe của FEMB vẫn luôn giữ được chất riêng: trẻ, mới và không ngại đổi khác, tạo nên một không gian học đường sôi động cho Gen Z.</p>
+            </div>
+        </section>
+
+        <section id="activities" class="section-box reverse">
+            <div class="image-side">
+                <img src="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/fem2.png" class="zoomable-img">
+            </div>
+            <div class="content-side">
+                <h2>2. Hoạt động nổi bật</h2>
+                <ul class="activity-list">
+                    <li><strong>Sinh hoạt định kì:</strong> Rèn luyện kỹ năng âm nhạc và nâng cao khả năng phối hợp.</li>
+                    <li><strong>Biểu diễn sự kiện:</strong> Góp mặt trong các buổi khai giảng, lễ tổng kết và hội nghị.</li>
+                    <li><strong>Đầu tư chuyên nghiệp:</strong> Chuẩn bị công phu từ nội dung đến cảm xúc truyền tải.</li>
+                    <li><strong>Môi trường năng động:</strong> Tận hưởng đam mê trong không gian vui vẻ, thoải mái.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section-box">
+            <div class="image-side">
+                <img src="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/fem3.png" class="zoomable-img">
+            </div>
+            <div class="content-side">
+                <h2>3. Vai trò của FEMB</h2>
+                <p>Đối với học sinh, FEMB giống như một <span class="highlight">“trạm sạc năng lượng”</span> giúp các bạn rèn luyện sự tự tin và bản lĩnh sân khấu.</p>
+                <p>Đối với nhà trường, câu lạc bộ góp phần xây dựng hình ảnh một ngôi trường năng động, sáng tạo và giàu bản sắc văn hóa thông qua những giai điệu kết nối mọi người.</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="minibox-overlay" id="miniboxOverlay">
+        <img class="minibox-content" id="miniboxImg" src="">
+    </div>
+
+    <footer>
+        <p style="text-align: center; color: #777; font-size: 0.8rem;">&copy; 2026 Free Enjoyable Music Band - FEMB</p>
+        <p>Nếu có thắc mắc vui lòng liên hệ:</p>
+        <p><a href="mailto:fembntsclub@gmail.com">fembntsclub@gmail.com</a></p>
+        <p><a href="https://www.instagram.com/fembclub">fembclub@instagram</a></p>
+    </footer>
+
+    <script>
+        const overlay = document.getElementById('miniboxOverlay');
+        const miniboxImg = document.getElementById('miniboxImg');
+        const zoomableImages = document.querySelectorAll('.zoomable-img');
+
+        zoomableImages.forEach(img => {
+            img.addEventListener('click', () => {
+                miniboxImg.src = img.src;
+                overlay.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) {
+                overlay.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    </script>
+
+</body>
+</html>
