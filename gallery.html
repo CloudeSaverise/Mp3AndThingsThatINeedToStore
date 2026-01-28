@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Thư viện ảnh - FEMB</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/css.css">
+    <style>
+        .gallery-container {
+            max-width: var(--max-width);
+            margin: 20px auto;
+        }
+
+        .featured-video {
+            width: 100%;
+            background: var(--white);
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            border: 3px solid var(--primary-pink);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            background: var(--white);
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+            transition: var(--transition);
+            border: 1px solid rgba(240, 98, 146, 0.1);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(240, 98, 146, 0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+        }
+
+        .gallery-title {
+            font-family: "Momo Signature", cursive;
+            color: var(--dark-pink);
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            border-left: 5px solid var(--primary-pink);
+            padding-left: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .photo-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/femblogo.jpg" alt="Logo" width="60" height="60">
+                <div class="logo-text">
+                    <h1>FEMB</h1>
+                    <p>Tự do - Năng động - Sáng tạo</p>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/femb.html">Trang chủ</a></li>
+                <li><a href="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/fembchar.html">Thành viên</a></li>
+                <li><a href="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/gallery.html">Thư viện</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100068426238734" target="_blank">Liên hệ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="gallery-container">
+        
+        <h2 class="gallery-title">Video Nổi Bật</h2>
+        <section class="featured-video">
+            <div class="video-wrapper">
+                <iframe src="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/gallery/14.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <h2 class="gallery-title">Khoảnh Khắc CLB</h2>
+        <div class="photo-grid">
+
+            <div class="gallery-item">
+                <img src="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/gallery/1.png" class="zoomable-img">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/gallery/2.png" class="zoomable-img">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/gallery/3.png" class="zoomable-img">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/gallery/4.jpg" class="zoomable-img">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/gallery/5.jpg" class="zoomable-img">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/gallery/6.png" class="zoomable-img">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/gallery/7.jpg" class="zoomable-img">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/gallery/8.png" class="zoomable-img">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/gallery/9.jpg" class="zoomable-img">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/gallery/11.jpg" class="zoomable-img">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/gallery/12.jpg" class="zoomable-img">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://cloudesaverise.github.io/Mp3AndThingsThatINeedToStore/gallery/13.jpg" class="zoomable-img">
+            </div>
+
+        </div>
+    </main>
+
+    <div class="minibox-overlay" id="miniboxOverlay">
+        <img class="minibox-content" id="miniboxImg" src="" alt="Gallery Preview">
+    </div>
+
+    <footer>
+        <p style="text-align: center; color: #777; font-size: 0.8rem;">&copy; 2026 Free Enjoyable Music Band - FEMB</p>
+    </footer>
+
+    <script>
+        const overlay = document.getElementById('miniboxOverlay');
+        const miniboxImg = document.getElementById('miniboxImg');
+        const zoomableImages = document.querySelectorAll('.zoomable-img');
+
+        // Lắng nghe sự kiện click trên từng ảnh trong thư viện
+        zoomableImages.forEach(img => {
+            img.addEventListener('click', () => {
+                miniboxImg.src = img.src; // Lấy link ảnh vừa ấn
+                overlay.style.display = 'flex'; // Hiển thị overlay
+                document.body.style.overflow = 'hidden'; // Khóa cuộn trang
+            });
+        });
+
+        // Đóng box khi ấn vào vùng đen (overlay)
+        overlay.addEventListener('click', (e) => {
+            if (e.target !== miniboxImg) { // Chỉ đóng khi không ấn trúng cái ảnh
+                overlay.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Mở lại cuộn trang
+            }
+        });
+    </script>
+
+</body>
+</html>
